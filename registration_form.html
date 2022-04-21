@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>REGISTRATION FORM</title>
+    </head>
+    <body>
+        <h1 style = "color : red">Student Registration form</h1>
+        <form action = "self" method = "post" name = "Registration">
+            <table>
+                <tr>
+                    <td>RegNo</td>
+                    <td><input type = "text" placeholder = "Enter your regno" name = "reg"></td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type = "text" placeholder = "Enter your Name" name = "name"></td>
+                </tr>
+                <tr>
+                    <td>Father Name</td>
+                    <td><input type = "text" placeholder="Enter your Father Name" name = "fname"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td><input type = "radio" name = "gender">Male
+                        <input type ="radio" name = "gender">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td><input type = "date" name = "dob"></td>
+                </tr>
+                <tr>
+                    <td>Branch</td>
+                    <td>
+                        <select>
+                            <option value = "-1">Select Branch</option>
+                            <option value = "cse">CSE</option>
+                            <option value = "IT">IT</option>
+                            <option value = "AI&DS">AI&DS</option>
+                            <option value = "ECE">ECE</option>
+                            <option value = "AI&ML">AI&ML</option>
+                            <option value = "EEE">EEE</option>
+                            <option value = "ME">ME</option>
+                            <option value = "CE">CE</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><textarea rows ="5" cols ="20" placeholder="Enter your Address"></textarea></td>
+                </tr>
+                <tr>
+                    <td align="center" ><input type = "submit" value = "Submit"></td>
+                    <td><input type = "reset" value = "Reset"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
