@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ConfirmBox</title>
+        <script language = "javascript">
+            function display_confirm(){
+                var variable = confirm("Press OK to open the confirm box");
+                if(variable){
+                    document.write("Confirm box is opened.");
+                }
+                else{
+                    document.write("Confirm box is not opened.");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type = "button" onclick = "display_confirm()" value = "Click to open Confirm Box">
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PromptBox</title>
+        <script language = "javascript">
+            function display_prompt(){
+                var name = prompt("Enter your name");
+                if(name == null || name == ""){
+                    document.write("User does not enteres the name");
+                }
+                else{
+                    document.write("Hi"+" "+name+"!"+","+"Welcome to visit the promptbox");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type = "button" onclick = "display_prompt()" value = "Click to open prompt box">
+    </body>
+</html>

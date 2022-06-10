@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>arithemtic operations</title>
+        <script>
+            function operation(){
+                var ele1 = document.forms["operation_form"]["operand1"].value;
+                var ele2 = document.forms["operation_form"]["operand2"].value;
+                var op = document.forms["operation_form"]["operator"].value;
+                if(op == "+"){
+                    text = "Addition of "+ele1+" and "+ele2+" is "
+                    document.getElementById("result").innerHTML = text + (Number(ele1)+Number(ele2));
+                }
+                else if(op == "-"){
+                    text = "Subtraction of "+ele1+" and "+ele2+" is "
+                    document.getElementById("result").innerHTML = text + (Number(ele1)-Number(ele2));
+                }
+                else if(op == "*"){
+                    text = "Multiplication of "+ele1+" and "+ele2+" is "
+                    document.getElementById("result").innerHTML = text + (Number(ele1)*Number(ele2));
+                }
+                else if(op == "/"){
+                    text = "Division of "+ele1+" and "+ele2+" is "
+                    document.getElementById("result").innerHTML = text + (Number(ele1)/Number(ele2));
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1 align = "center">Arithmetic Operations : + - * /</h1>
+        <fieldset>
+            <form id = "operation_form">
+                <table align = "center">
+                    <tr>
+                        <td>Operand1</td>
+                        <td id = "operand1"><input type = "text" name = "operand1" placeholder = "Enter operand1"></td>
+                    </tr>
+                    <tr>
+                        <td>Operand2</td>
+                        <td id = "operand2"><input type = "text" name = "operand2" placeholder = "Enter operand2"></td>
+                    </tr>
+                    <tr>
+                        <td>Operator</td>
+                        <td id = "operator"><input type = "text" name = "operator" placeholder = "Enter operator"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type = "button" value = "submit" onclick = "operation()"></td>
+                    </tr>
+                    <tr>
+                        <td><h1 id = "result"></h1></td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+    </body>
+</html>
